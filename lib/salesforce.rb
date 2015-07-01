@@ -3,11 +3,11 @@ require 'pry'
 
 class SalesforceConnection
   def initialize
-    @client = Restforce.new :username => "",
-      :password => "",
-      :security_token => "",
-      :client_id => "",
-      :client_secret => ""
+    @client = Restforce.new :username => ENV['username'],
+      :password => ENV['password'],
+      :security_token => ENV['security_token'],
+      :client_id => ENV['client_id'],
+      :client_secret => ENV['client_secret']
   end
 
   def check_email(email, firstName, lastName, postalCode)
