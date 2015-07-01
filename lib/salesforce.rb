@@ -13,7 +13,7 @@ class SalesforceConnection
   def check_email(email, firstName, lastName, postalCode)
     result = @client.find('contact', email, "email")
     if result.FirstName == firstName && result.LastName == lastName && result.Email == email && result.MailingPostalCode == postalCode.upcase
-      "success"
+      "success #{result.FirstName} #{result.LastName} at #{result.Email} is in salesforce"
     else return
     end
   end

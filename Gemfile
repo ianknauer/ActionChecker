@@ -17,5 +17,5 @@ gem 'nokogiri'
 gem 'mechanize'
 gem 'restforce'
 gem 'smarter_csv'
-gem 'figaro'
+gem 'dotenv'
 
