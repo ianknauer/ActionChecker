@@ -18,3 +18,4 @@ Run the command ```bash ruby Action_verifier.rb``` in terminal and the code will
 
 * Remove contacts from salesforce after you create them
 * Read write to google doc instead of csv file?
+* All the tests
